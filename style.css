@@ -17,6 +17,46 @@
 .navbar-nav .nav-link:hover {
   color: #f4c2c2; /* soft pink hover */
 }
+
+@media (max-width: 768px) {
+  #home {
+    height: 80vh;
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  #home h1 {
+    font-size: 1.8rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .btn-warning {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+.btn-warning {
+  background-color: #7b2cbf;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #00b4d8;
+  color: #141414;
+  transform: scale(1.05);
+}
+.text-success {
+  color: #2fcbc0 !important;
+  text-shadow: 0 0 15px rgba(175, 54, 173, 0.8);
+}
+
 #home{
   background-image: linear-gradient(rgba(210, 97, 119, 0.6), rgba(0, 0, 0, 0.6)), /* overlay color */
     url('https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png') ;
@@ -25,4 +65,35 @@
   background-repeat: no-repeat;
   height: 100vh;
   color: white;
+}
+#about{
+  background-image: linear-gradient(rgba(80, 76, 92, 0.6), rgba(0, 0, 0, 0.6)),
+  url("https://media.istockphoto.com/id/1133941870/photo/abstract-chaotic-background.jpg?b=1&s=170667a&w=0&k=20&c=0Fz4ed2SDX56n0qgu-7PLJCJuimSVqtEUFBl-5iWD7E=");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  background-size: cover;
+  height: 60vh;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  font-size: 0.9rem;
 }
